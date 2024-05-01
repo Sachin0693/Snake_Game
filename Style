@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    background: url(bg.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    height: 90vmin;
+    width: 88vmin;
+    background: linear-gradient(rgb(215, 240, 210),rgb(233, 244, 185));
+    border-radius: 10px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+#score{
+    font-family: "Kalam", cursive;
+    position: absolute;
+    top: 30px;
+    left: 950px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.snake{
+    background: linear-gradient(rgb(243, 115, 215),rgb(81, 200, 247));
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.head{
+    background: linear-gradient(rgb(247, 31, 31),rgb(255, 211, 66));
+    border: 1px solid rgb(248, 169, 104);
+    border-radius: 8px;
+    transform: scale(1.02);
+}
+
+.food{
+    background: linear-gradient(rgb(105, 201, 241),rgb(118, 235, 40));
+    border: 2px solid black;
+    border-radius: 8px;
+}
